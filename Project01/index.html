@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lets Fit</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Ubuntu:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    /* Css reset */
+    body {
+      color: rgb(78, 75, 75);
+      margin: 0;
+      padding: 0;
+      background: url("img/background1.jpg");
+      background-size: cover;
+      font-family: "Rubik", sans-serif;
+      /* font-family: 'Ubuntu', sans-serif; */
+    }
+    .left {
+      /* border: 2px solid red; */
+      display: inline-block;
+      position: absolute;
+      left: 61px;
+      top: 29px;
+    }
+    .left img {
+      width: 116px;
+      filter: drop-shadow(8px 5px 46px red) invert(121%);
+    }
+    .left div {
+      color: aqua;
+      text-align: center;
+      font-size: 24px;
+    }
+    .mid {
+      display: block;
+      width: 36%;
+      margin: 39px auto;
+      /* border: 2px solid green; */
+    }
+    .right {
+      /* border: 2px solid rgb(111, 227, 211); */
+      position: absolute;
+      right: 34px;
+      top: 36px;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 25px;
+    }
+    .navbar li a {
+      color: aqua;
+      text-decoration: none;
+      padding: 34px 23px;
+      /* font-size: 25px; */
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: rgb(244, 242, 246);
+    }
+    .btn {
+      margin: 0px 9px;
+      background-color: rgb(14, 14, 14);
+      color: aqua;
+      padding: 4px 14px;
+      border: 2px solid gray;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      font-family: "Rubik", sans-serif;
+    }
+    .btn:hover {
+      background-color: rgb(119, 121, 123);
+    }
+    .container {
+      border: 2px solid aqua;
+      margin: 220px 150px;
+      padding: 47px 37px;
+      width: 33%;
+      border-radius: 28px;
+    }
+    .container h1 {
+      color: aliceblue;
+      text-align: center;
+    }
+    .from_group input {
+      text-align: center;
+      display: block;
+      width: 508px;
+      padding: 1px;
+      border: 2px solid aqua;
+      margin: 11px auto;
+      font-size: 25px;
+      border-radius: 9px;
+    }
+    .container button {
+      display: block;
+      width: 83%;
+      margin: 20px auto;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+        <img src="img/logo1_.png" alt="" />
+        <div>Lets Fit</div>
+      </div>
+      <!--mid box for navbar  -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Book Now</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- right box for button -->
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join the best gym of Delhi now</h1>
+      <form action="noaction.php">
+        <div class="from_group">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="from_group">
+          <input type="text" name="" placeholder="Enter your Age" />
+        </div>
+        <div class="from_group">
+          <input type="text" name="" placeholder="Enter your Gender" />
+        </div>
+        <div class="from_group">
+          <input type="text" name="" placeholder="Enter your Locality" />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
