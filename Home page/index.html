@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="slider()">
+    <div class="banner">
+        <div class="slider">
+            <img src="./img1.jpg" id="sliderImg">
+        </div>
+        <div class="overlay">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./logo.png">
+                </div>
+                <div class="menu-icons">
+                    <img src="./user.png">
+                    <img src="./cart.png">
+                    <img src="./menu.png">
+                </div>
+
+            </div>
+            <div class="content">
+                <h1>LET'S START TO DESIGN</h1>
+                <h3>When you're looking for the best deals on home furniture, no one beats your hometown furniture store Explore the best Furniture Decoration ideas & tips for your home to suit your style.</h3>
+
+
+                <div>
+                    <button type="button">WATCH MORE</button>
+                    <button type="button" class="btn-2">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var sliderImg = document.getElementById("sliderImg")
+
+        var images = new Array(
+            "images/img1.jpg",
+            "images/img2.jpg",
+            "images/img3.jpg",
+            "images/img4.jpg"
+        );
+
+        var len = images.length;
+        var i=0;
+
+        function slider(){
+            if(i>len-1){
+                i=0;
+            }
+            sliderImg.src =images[i];
+            i++;
+            setTimeout('slider()',3000);
+        }
+    </script>
+</body>
+</html>
